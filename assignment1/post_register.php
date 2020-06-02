@@ -7,7 +7,7 @@ if(count($_POST) > 0):
     $pwd = $_POST['password'];
 
     // insert to table
-    $user = new \assignment1\User(null,$name,$email,$pwd);
+    $user = new \Model\User(null,$name,$email,$pwd);
     $user->save();
 
     header("Location: ?route=users");// dieu huong tro lai trang danh sach

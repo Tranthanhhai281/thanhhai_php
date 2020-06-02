@@ -16,7 +16,7 @@
         <form action="?route=post_edit" method="post">
             <?php
             $id = $_GET["id"];
-            $user = new \assignment1\User();
+            $user = new \Model\User();
             $user = $user->find($id);
             $current = $_SESSION['user'];
             ?>

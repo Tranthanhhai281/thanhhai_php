@@ -9,7 +9,7 @@ switch ($route){
     case "register": $controller->register();break;
     case "post_register": $controller->postRegister();break;
     case "users": $controller->users();break;
-    case "edit": require __DIR__ . "/assignment1/edit.php";break;
+    case "edit": require __DIR__ . "/View/edit.php";break;
     case "post_edit": require __DIR__."/assignment1/post_edit.php";break;
     case "delete": require __DIR__."/assignment1/delete.php";break;
 

@@ -43,7 +43,7 @@ class User extends Model {
     }
 
     public function find($id){
-        $sql_text = "SELECT * FROM ".$this->getTable()." WHERE id = ".$id;
+        $sql_text = "SELECT * FROM".$this->getTable()." WHERE id = ".$id;
         $ary = $this->toArray($this->getConn()->query($sql_text));
         if(count($ary) > 0){
             $data = $ary[0];
